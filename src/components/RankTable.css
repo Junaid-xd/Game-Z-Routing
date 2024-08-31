@@ -1,0 +1,116 @@
+
+
+.rank-table-popup-wrapper{
+  background-color: black;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 90%;
+  z-index: 2;
+  padding: 10px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 5px rgb(64, 213, 254); */
+  color: white;
+}
+
+
+.rank-popup-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid white;
+
+  /* background-color: yellow; */
+}
+
+
+
+.rank-table-heading-div p{
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.rank-table-heading-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(97, 193, 248);
+  padding-bottom: 10px;
+}
+
+.rank-table-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.rank-table{
+  width: 95%;
+  border: 1px solid white;  
+}
+
+.rank-table-body{
+  text-align: center;
+}
+
+.rank-table-head{
+  background-color: rgb(126, 221, 253);
+  height: 30px;
+  color: black;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.profile-popup-close-btn-div{
+  margin-left: 2vmax;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.back-btn{
+  text-decoration: none;
+  color:white;
+  padding: 5px;
+  font-size: 12px;
+
+}
+
+td{
+  border: 1px solid white;
+}
+
+
+tr:hover{
+  background-color: white;
+  color: black;
+}
+
+tr{
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.you-row{
+  background-color: green;
+  width: 100%;
+}
+
+.msg-div{
+  color: rgb(138, 133, 133);
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 10px;
+  font-weight: bold;
+  justify-content: center;
+}

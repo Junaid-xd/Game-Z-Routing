@@ -1,0 +1,101 @@
+
+.new-question-popup-wrapper{
+  background-color: black;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 90%;
+  z-index: 2;
+  padding: 10px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 5px yellow;
+  color: white;
+}
+
+.new-question-popup-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid white;
+}
+
+.new-question-popup-heading-div p{
+  margin: 0;
+  padding: 0;
+}
+
+
+.new-question-popup-heading-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  font-size: 18px;
+  font-weight: 900;
+  color: rgb(70, 205, 243);
+  padding-left: 15px;
+}
+
+.new-question-info-popup-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(9, 104, 142);
+  color: white;
+  font-size: 20px;
+  width: 10%;
+  border-radius: 20px;
+  
+}
+
+.form-input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5%;
+}
+
+.radio-div{
+  margin-top: 13px;
+  font-size: 13px;
+}
+
+.create-btn-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.create-btn{
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 0px;
+  width: 50%;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.create-btn:active{
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+
+
+.error-msg-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}

@@ -1,0 +1,34 @@
+.number-popup-info-wrapper{
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 90%;
+  z-index: 1;
+  padding: 10px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 5px rgb(93, 192, 254);
+  color: white;
+}
+
+.number-info-popup-top{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+}
+
+
+.number-info-popup-bottom{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 10px;
+  color: rgb(141, 196, 237);
+}
