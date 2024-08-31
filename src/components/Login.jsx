@@ -38,12 +38,11 @@ function Login({setAuthorize, setValiduser, allUsers}) {
       let found = false;
       allUsers.forEach((user)=>{
         if(user.username == enteredName && user.password == enteredPassword){
+          localStorage.setItem('validUser', JSON.stringify(user));
           setValiduser(user);
           setAuthorize(true);
           found=true;
-          navigate('/home')
-          localStorage.setItem('validUser', JSON.stringify(user));
-
+          navigate('/home');
         }
       })
 
