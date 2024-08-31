@@ -8,7 +8,14 @@ import { RouterProvider, createHashRouter} from 'react-router-dom'
 import RankTable from './components/RankTable'
 
 
-
+// {
+//   _id:'',
+//   username:'',
+//   password:'',
+//   score:0,
+//   correctAnswers:0,
+//   attepts:0
+// }
 
 
 
@@ -16,13 +23,23 @@ function App() {
 
   const [authorize, setAuthorize] = useState(false);
 
-  const [validUser, setValiduser] = useState({
-    _id:'',
-    username:'',
-    password:'',
-    score:0,
-    correctAnswers:0,
-    attepts:0
+  const [validUser, setValiduser] = useState(()=>{
+
+    const localUser = JSON.parse(localStorage.getItem('validUser'));
+
+    if(localUser){
+      return localUser;
+    }
+    else{
+      return {
+        _id:'',
+        username:'',
+        password:'',
+        score:0,
+        correctAnswers:0,
+        attempts:0
+      }
+    }
   });
 
   const [allUsers, setAllUsers] = useState([]);
