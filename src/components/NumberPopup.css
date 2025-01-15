@@ -11,6 +11,7 @@
   border-radius: 20px;
   box-shadow: 0px 0px 10px 5px yellow;
   color: white;
+
 }
 
 
@@ -18,7 +19,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 5px;
+  padding: 0% 2%;
+  padding-bottom: 4%;
+  border-bottom: 2px solid gray;
 }
 
 .number-popup-info-btn{
@@ -39,6 +42,8 @@
   padding: 5px;
   width: 100%;
   margin-top: 20px;
+
+
 }
 
 

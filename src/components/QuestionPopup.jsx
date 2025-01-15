@@ -164,7 +164,6 @@ function QuestionPopup({ allQuestions, setShowquestion, user}) {
     })
     .then(response => response.json())
     .then(data => {
-      console.log('Success:');
       const tempUser = {
         _id: user._id,
         username: user.username,
@@ -228,12 +227,11 @@ function QuestionPopup({ allQuestions, setShowquestion, user}) {
       })
     })
     .then(response => response.json())
-    .then(data => console.log('Success'))
     .catch((error) => console.error('Error:', error));
   }
 
   const verifyAnswer = ()=>{
-    const givenAnswer = document.querySelector('.answer-input-ele').value.toLowerCase();
+    const givenAnswer = document.querySelector('.answer-input-ele').value.trim().toLowerCase();
 
     if(givenAnswer!=""){
 
@@ -282,16 +280,15 @@ function QuestionPopup({ allQuestions, setShowquestion, user}) {
 
         <div className='question-popup-bottom'>
           <div className='question-popup-question-div'>
-            <p style={{fontSize:13}}>Question: </p>
-            <input
-              type="text"
-              className='question-input-ele'
+            <p>Question: </p>
+            <textarea
+              className="question-input-ele"
               value={randomQuestion.query}
               readOnly
             />
           </div>
           <div className='question-popup-answer-div'>
-            <p style={{fontSize:13}}>Answer: </p>
+            <p>Answer: </p>
             <input type="text" className='answer-input-ele' defaultValue={""}/>
           </div>
           <div className='error-div'></div>

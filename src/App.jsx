@@ -105,7 +105,7 @@ function App() {
     },
     {
       path:'/signup',
-      element: <Signup  allUsers={allUsers} setFailedMessage={setFailedMessage}  setSuccessMessage={setSuccessMessage} setShowEmergencyPopup={setShowEmergencyPopup}/>
+      element: <Signup setFailedMessage={setFailedMessage}  setSuccessMessage={setSuccessMessage} setShowEmergencyPopup={setShowEmergencyPopup}/>
     },
     {
       path:'/home',

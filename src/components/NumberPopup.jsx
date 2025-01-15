@@ -212,7 +212,7 @@ function NumberPopup({user, setShowNumberPopup}) {
 
           </div>
 
-          <div className="noQuestionsAvailableDiv"></div>
+          
         </div>
 
       <div>
